@@ -3,12 +3,12 @@ const getBtn = document.querySelector('#getstuff');
 const heading = document.querySelector('h1');
 const image = document.querySelector('img')
 
-let baseURL = 'http://localhost:4000'
+// let baseURL = 'http://localhost:4000'
 
 
 button.addEventListener('click', (event) => {
     alert("YOU LOVE THIS PAGE");
-    axios.get(`${baseURL}/image`)
+    axios.get(`/image`)
     .then(response => {
         let newImage = response.data;
         image.src = newImage;
@@ -16,7 +16,7 @@ button.addEventListener('click', (event) => {
 })
 
 const getStuff = event => {
-    axios.get(`${baseURL}/stuff`)
+    axios.get(`/stuff`)
     .then(response => {
         let newHeading = response.data;
         heading.textContent = newHeading;

@@ -25,6 +25,7 @@ app.get('/', (req,res) => {
 
 app.get('/image', (req, res) => {
     try{
+        // critical()
         rollbar.log('fetching new image')
         let images = ['./images/sincerely-media-3KEFp35FVB0-unsplash.jpg', './images/katya-ross-4Vg6ez9jaec-unsplash.jpg', './images/engin-akyurt-cIdVZMnyVv4-unsplash.jpg', './images/jan-antonin-kolar-uYmF6ncEgLY-unsplash.jpg']
         let randomImage = images[Math.floor(Math.random() * 4)]
