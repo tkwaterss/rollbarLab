@@ -12,4 +12,4 @@ app.get('/', (req,res) => {
     res.status(200).sendFile(path.join(__dirname, '../public/index.html'))
 })
 
-app.listen(4002, console.log("App running on 4002"))
+app.listen(4000, console.log("App running on 4000"))
