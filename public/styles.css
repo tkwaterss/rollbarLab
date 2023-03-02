@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(105, 73, 92);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    height: 450px;
+}
+button {
+    padding: 20px;
+    background-color: red;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 20px;
+}
